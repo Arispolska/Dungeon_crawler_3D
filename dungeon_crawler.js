@@ -195,7 +195,7 @@ function updateTreasureCount() {
 function endGame(message) {
   showMessage(message);
   isGameOver = true;
-  document.removeEventListener('keydown', handleKeyPress);
+  
   
   if (treasuresCollected === TREASURE_COUNT) {
       setTimeout(() => {
